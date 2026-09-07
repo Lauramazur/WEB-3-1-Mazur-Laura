@@ -247,3 +247,33 @@ footer {
   background-color: #d7ccc8;
   font-size: 0.9rem;
 }
+.dark {
+  background: #222;
+  color: white;
+}
+
+.dark .navbar,
+.dark footer {
+  background: #333;
+}
+
+.dark .hero,
+.dark .promotii {
+  background: #3a2924;
+}
+
+.dark .recomandari {
+  background: #222;
+}
+
+.dark .card,
+.dark .promo {
+  background: #333 !important;
+  color: white;
+}
+#theme-toggle {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
