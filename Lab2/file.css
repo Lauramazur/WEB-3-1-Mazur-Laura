@@ -1,0 +1,134 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.steag-tabel-md {
+    width: 300px;
+    height: 200px;
+    border-collapse: collapse;
+    border: 1px solid #000000;  
+}
+.steag-tabel-md td {
+    width: 33.33%;
+}
+.banda-stanga {
+    background-color: #002B7F; 
+}
+.banda-mijloc {
+    background-color: #FCD116;
+}
+.banda-dreapta {
+    background-color: #CE1126; 
+}
+
+
+.steag-norvegia {
+    width: 440px;
+    height: 320px;
+    border-collapse: collapse;
+    border: 1px solid #c0c0c0;
+}
+
+.rand-rosu-sus, 
+.rand-rosu-jos {
+    height: 37.5%; 
+}
+
+.rand-alb-orizontal {
+    height: 6.25%; 
+}
+
+.rand-albastru-orizontal {
+    height: 12.5%; 
+}
+
+.steag-norvegia td:nth-child(1) { width: 27.27%; } 
+.steag-norvegia td:nth-child(2) { width: 4.55%; } 
+.steag-norvegia td:nth-child(3) { width: 9.09%; }  
+.steag-norvegia td:nth-child(4) { width: 4.55%; } 
+.steag-norvegia td:nth-child(5) { width: 54.54%; } 
+
+.rosu, .rosu-lung {
+    background-color: #EF2B2D; 
+}
+
+.alb {
+    background-color: #FFFFFF; 
+}
+
+.albastru {
+    background-color: #002868; 
+}
+
+
+.steag-suedia {
+    width: 480px;
+    height: 300px;
+    border-collapse: collapse; 
+    border: 1px solid #c0c0c0;
+}
+
+.rand-albastru {
+    height: 40%;
+}
+
+.rand-galben {
+    height: 20%; 
+}
+
+.albastru-scurt { 
+    width: 31.25%; 
+}
+
+.steag-suedia td:nth-child(2) { 
+    width: 12.5%;  
+}
+
+.albastru-lung { 
+    width: 56.25%; 
+}
+
+.albastru-scurt, .albastru-lung {
+    background-color: #006AA7; 
+}
+
+.galben {
+    background-color: #FECC00; 
+}
+
+ .tabel-comparativ {
+        width: 100%;
+        max-width: 900px;
+        border-collapse: collapse;
+        font-family:Arial;
+        font-size: 15px;
+        background-color:#ffffff;
+        color:#000000;
+        margin: 20px auto;
+    }
+
+    .tabel-comparativ th {
+        font-weight: 600;
+        text-align: left;
+        padding: 16px 12px;
+        color:#000;
+        border-bottom: 1px solid #222222;
+        border-right: 1px solid #222222;
+    }
+
+    .tabel-comparativ td {
+        padding: 18px 12px;
+        text-align: left;
+        color: #000;
+        border-bottom: 1px solid #111111;
+         border-right: 1px solid #111;
+    }
+footer{
+    background-color: #222222;
+    color:#ffffff;
+     text-align: center;
+      padding: 15px 30px;
+}
+    
+
