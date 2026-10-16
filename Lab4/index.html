@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorul 4 </title>
+</head>
+<body>
+
+
+    <hr>
+
+    <input type="text" id="produs" placeholder="Introdu un produs">
+
+    <button onclick="adaugaSfarsit()">Adaugă la sfârșit</button>
+    <button onclick="adaugaInceput()">Adaugă la început</button>
+    <button onclick="stergePrimul()">Șterge primul</button>
+    <button onclick="stergeUltimul()">Șterge ultimul</button>
+
+    <ul id="listaProduse"></ul>
+
+    <hr>
+
+
+    <h3>Numărul de elevi</h3>
+    <p id="numarElevi"></p>
+
+    <h3>Lista elevilor</h3>
+    <div id="catalog"></div>
+
+    <h3>Adaugă un elev</h3>
+
+    <input type="text" id="nume" placeholder="Numele elevului">
+    <input type="number" id="varsta" placeholder="Vârsta">
+    <input type="number" id="nota" placeholder="Nota" min="1" max="10">
+
+    <button onclick="adaugaElev()">Adaugă elev</button>
+    <p id="mesajAdaugare"></p>
+
+    <h3>Șterge un elev</h3>
+
+    <input type="text" id="numeStergere" placeholder="Numele elevului">
+    <button onclick="stergeElev()">Șterge elev</button>
+    <p id="mesajStergere"></p>
+
+    <h3>Caută un elev</h3>
+
+    <input type="text" id="numeCautare" placeholder="Numele elevului">
+    <button onclick="cautaElev()">Caută</button>
+    <p id="rezultatCautare"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
