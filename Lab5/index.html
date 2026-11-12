@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrare studenți</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+    <h1>Administrarea studenților</h1>
+    <p class="subtitle">Adaugă, vizualizează și gestionează studenții.</p>
+
+    <section class="panel">
+        <div class="section-heading">
+            <h2>Lista studenților</h2>
+            <span class="counter">
+                Număr de studenți:
+                <strong id="studentCount">0</strong>
+            </span>
+        </div>
+
+        <div id="studentList" class="student-list"></div>
+    </section>
+
+    <section class="panel">
+        <h2>Adaugă un student</h2>
+
+        <form id="studentForm">
+            <div class="form-grid">
+
+                <label>Nume și prenume
+                    <input type="text" id="name"
+                    placeholder="Ex.: Ana Popescu" required>
+                </label>
+
+                <label>Grupa
+                    <input type="text" id="group"
+                    placeholder="Ex.: SI-231" required>
+                </label>
+
+                <label>Vârsta
+                    <input type="number" id="age"
+                    min="14" max="100" step="1"
+                    placeholder="Ex.: 19" required>
+                </label>
+
+                <label>Specialitatea
+                    <input type="text" id="specialty"
+                    placeholder="Ex.: Programare" required>
+                </label>
+
+                <label>Avatar
+                    <select id="avatar" required>
+                        <option value="👩‍🎓">👩‍🎓 Studentă</option>
+                        <option value="👨‍🎓">👨‍🎓 Student</option>
+                        <option value="🧑‍💻">🧑‍💻 Programator</option>
+                        <option value="🦉">🦉 Bufniță</option>
+                        <option value="🐱">🐱 Pisică</option>
+                    </select>
+                </label>
+
+            </div>
+
+            <button class="primary-button" type="submit">
+                Adaugă student
+            </button>
+
+            <p id="formMessage" class="form-message"></p>
+        </form>
+    </section>
+
+    <section class="panel">
+        <h2>Setări Flexbox pentru carduri</h2>
+
+        <div class="controls">
+
+            <label>justify-content
+                <select id="justifyControl">
+                    <option value="flex-start">flex-start</option>
+                    <option value="center">center</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option>
+                </select>
+            </label>
+
+            <label>align-items
+                <select id="alignControl">
+                    <option value="stretch">stretch</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="center">center</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="baseline">baseline</option>
+                </select>
+            </label>
+
+            <label>flex-wrap
+                <select id="wrapControl">
+                    <option value="wrap">wrap</option>
+                    <option value="nowrap">nowrap</option>
+                </select>
+            </label>
+
+            <label>gap: <strong id="gapValue">16</strong> px
+                <input type="range" id="gapControl"
+                min="0" max="40" value="16">
+            </label>
+
+        </div>
+
+       
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    color: #eef1fa;
+    background: #10131d;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+h1, h2, p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.subtitle {
+    margin-bottom: 26px;
+    text-align: center;
+    color: #aab2c7;
+}
+
+.panel {
+    margin-bottom: 22px;
+    padding: 22px;
+    border: 1px solid #303b55;
+    border-radius: 14px;
+    background: #191e2b;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    margin-bottom: 18px;
+    font-size: 19px;
+}
+
+.counter {
+    color: #b8c1d5;
+    font-size: 14px;
+}
+
+.counter strong {
+    color: white;
+}
+
+.student-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.student-card {
+    flex: 1 1 270px;
+    max-width: 340px;
+    min-width: 235px;
+    padding: 16px;
+    border: 1px solid #3b4968;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #293550, #202a40);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 13px;
+}
+
+.avatar {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: #3a496d;
+    font-size: 25px;
+}
+
+.student-name {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+
+.group {
+    margin: 0;
+    color: #aeb8ce;
+    font-size: 13px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 9px 12px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.detail-label {
+    color: #aeb8ce;
+}
+
+.detail-value {
+    text-align: right;
+    color: #eef1fa;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 20px;
+    background: #315b50;
+    color: #c8f0df;
+    font-size: 11px;
+}
+
+.delete-button {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #754653;
+    border-radius: 9px;
+    background: #422c38;
+    color: #ffdce4;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #633846;
+}
+
+.empty-message {
+    width: 100%;
+    padding: 28px;
+    border: 1px dashed #53617d;
+    border-radius: 12px;
+    color: #c0c9dc;
+    text-align: center;
+}
+
+
+
+.form-grid, .controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 15px;
+    margin-bottom: 17px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #c3cbe0;
+    font-size: 13px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 11px;
+    border: 1px solid #46516b;
+    border-radius: 8px;
+    outline: none;
+    background: #111725;
+    color: #f1f3fa;
+}
+
+input:focus, select:focus {
+    border-color: #8b80e8;
+}
+
+input[type="range"] {
+    padding: 0;
+    accent-color: #8b80e8;
+}
+
+.primary-button {
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 9px;
+    background: #796bd1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background: #6557bd;
+}
+
+.form-message {
+    min-height: 18px;
+    margin: 12px 0 0;
+    color: #9ee0bd;
+    font-size: 13px;
+}
+
+.hint {
+    margin: 0;
+    color: #9faac1;
+    font-size: 13px;
+}
+
+@media (max-width: 560px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .panel {
+        padding: 16px;
+    }
+
+    .student-card {
+        max-width: none;
+        min-width: 100%;
+    }
+}
